@@ -1,0 +1,49 @@
+#wrapper {
+    width:400px;
+    margin: 0 auto 0 auto;
+    border: 1px solid #777;
+}
+header.page {
+    margin:10px;
+    padding: 10px;
+    border:1px solid #000;
+    text-align:center;
+}
+header.page h1:hover {
+    color:#444444;
+}
+article, aside {
+    float:left;
+}
+nav li {
+    display:inline;
+    padding:0;
+    margin:0;
+    padding-right:20px;
+}
+a:link {
+    color:#777;
+}
+a:hover {
+    color:#aaa;
+}
+a:visited {
+    color:#660000;
+    text-decoration:none;
+}
+a:active {
+    color:#999900;
+}
+article {
+    width:275px;
+    margin:10px;
+}
+aside li {
+    list-style: disc url('https://drive.google.com/uc?id=0B6Sg_ALpI1HFVDBlVEdsenV3ZHc');
+}
+footer {
+    clear:left;
+    border:1px solid #000;
+    margin:10px;
+    padding:10px;
+}
