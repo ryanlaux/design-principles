@@ -1,50 +1,81 @@
-<!doctype html>
-<html>
-<head>
-<title>Beginning Design Elements</title>
-<link rel="stylesheet" href="./styles/mystyles.css">
-</head>
-<body>
-<div id="wrapper">
-    <header class="page">
-         <h1>Here's My Site Name</h1>
+#wrapper {
+    width:400px;
+    margin: 0 auto 0 auto;
+    border: 1px solid #777;
+}
+header.page {
+    margin:10px;
+    padding: 10px;
+    border:1px solid #000;
+    text-align:center;
+}
+header.page h1:hover {
+    color:#444444;
+}
+article, aside {
+    float:left;
+}
+nav li {
+    display:inline;
+    padding:0;
+    margin:0;
+    padding-right:20px;
+}
+a:link {
+    color:#777;
+}
+a:hover {
+    color:#aaa;
+}
+a:visited {
+    color:#660000;
+    text-decoration:none;
+}
+a:active {
+    color:#999900;
+}
+article {
+    width:275px;
+    margin:10px;
+}
+aside li {
+    list-style: disc url('https://drive.google.com/uc?id=0B6Sg_ALpI1HFVDBlVEdsenV3ZHc');
+}
+footer {
+    clear:left;
+    border:1px solid #000;
+    margin:10px;
+    padding:10px;
+}
 
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#1">Nav Link 1</a>
+/* for 992 or less */
+@media screen and (max-width: 992px){
+    #wrapper {
+        width: 94%;
+    }
+    article{
+        width: 68%;
+    }
+    aside{
+        width: 30%;
+    }
+}
 
-            </li>
-            <li><a href="#2">Nav Link 2</a>
+/* for 768 or less */
+@media screen and (max-width: 768px){
+    article{
+        width: auto;
+        float: none;
+    }
+    aside{
+        width: auto;
+        float: none;
+    }
+}
 
-            </li>
-            <li><a href="#3">Nav Link 3</a>
-
-            </li>
-        </ul>
-    </nav>
-    <article>
-        <header class="article">
-             <h1>My Article</h1>
-
-        </header>
-    </article>
-    <aside>
-        <ul>
-            <li><a href="#1">Link 1</a>
-
-            </li>
-            <li><a href="#2">Link 2</a>
-
-            </li>
-            <li><a href="#3">Link 3</a>
-
-            </li>
-        </ul>
-    </aside>
-    <footer>
-        <p>footer content here</p>
-    </footer>
-</div>
-</body>
-</html>
+/* for 480 or less */
+@media screen and (max-width: 480px){
+    aside{
+        display: none;
+    }
+}
